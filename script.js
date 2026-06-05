@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         seatsSelect.value = '1';
                     } else if (ticketType === '2') {
                         seatsSelect.value = '2';
-                    } else if (ticketType === '4') {
+                    } else if (ticketType === '5') {
                         seatsSelect.value = 'абонемент';
                     }
                 }
