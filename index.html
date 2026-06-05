@@ -23,6 +23,7 @@
     
     <!-- Подключение стилей -->
     <link rel="stylesheet" href="styles.css">
+    <script>document.documentElement.classList.add('js-enabled');</script>
 </head>
 <body>
 
@@ -74,23 +75,23 @@
     <section class="hero">
         <div class="container hero-grid">
             <div class="hero-content">
-                <span class="hero-badge">Авторский проект Яны Гадецкой</span>
-                <h1 class="hero-title">ДЕЛА АМУРНЫЕ</h1>
-                <p class="hero-subtitle">Камерные встречи о любви, свиданиях, браке, разводах, сексе, ссорах и тех сценариях, которые мы иногда называем судьбой</p>
-                <div class="hero-descr">
+                <span class="hero-badge reveal reveal-up">Авторский проект Яны Гадецкой</span>
+                <h1 class="hero-title reveal reveal-up delay-100">ДЕЛА АМУРНЫЕ</h1>
+                <p class="hero-subtitle reveal reveal-up delay-200">Камерные встречи о любви, свиданиях, браке, разводах, сексе, ссорах и тех сценариях, которые мы иногда называем судьбой</p>
+                <div class="hero-descr reveal reveal-up delay-300">
                     Мы можем быть умными, опытными, самостоятельными людьми. А потом в личной жизни вдруг снова попадаем в серию, которую уже видели: тот же типаж, те же обиды, то же ожидание сообщения, тот же внутренний диалог в ванной и тот же вопрос утром: <em>«Господи, как я опять здесь оказалась/оказался?»</em>
                     <br><br>
                     Умные люди в личной жизни иногда ведут себя как герои сериала, который сами же устали смотреть. «Дела амурные» — это живые встречи, где мы открываем любовный архив: старые файлы, битые настройки, семейные программы и внутренние вирусы, из-за которых новые отношения подозрительно похожи на старые.
                 </div>
                 
                 <!-- Элемент 4: Primary CTA кнопки -->
-                <div class="hero-actions">
+                <div class="hero-actions reveal reveal-up delay-400">
                     <button class="btn btn-terracotta" data-scroll-to="booking">Занять место в зале</button>
                     <button class="btn btn-outline" data-scroll-to="questions">Прислать анонимный вопрос</button>
                 </div>
 
                 <!-- Элемент 5: Социальное доказательство (Social Proof) -->
-                <div class="social-proof">
+                <div class="social-proof reveal reveal-up delay-500">
                     <div class="social-proof-avatars">
                         <div class="sp-avatar" style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;40&quot; height=&quot;40&quot; viewBox=&quot;0 0 40 40&quot;><rect width=&quot;40&quot; height=&quot;40&quot; fill=&quot;%233D2621&quot;/><text x=&quot;20&quot; y=&quot;24&quot; font-size=&quot;14&quot; fill=&quot;%23C5A059&quot; font-family=&quot;sans-serif&quot; text-anchor=&quot;middle&quot; font-weight=&quot;bold&quot;>ЕА</text></svg>')"></div>
                         <div class="sp-avatar" style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;40&quot; height=&quot;40&quot; viewBox=&quot;0 0 40 40&quot;><rect width=&quot;40&quot; height=&quot;40&quot; fill=&quot;%234A0D15&quot;/><text x=&quot;20&quot; y=&quot;24&quot; font-size=&quot;14&quot; fill=&quot;%23C5A059&quot; font-family=&quot;sans-serif&quot; text-anchor=&quot;middle&quot; font-weight=&quot;bold&quot;>МК</text></svg>')"></div>
@@ -105,7 +106,10 @@
 
             <!-- Формат первого экрана в виде красивой карточки -->
             <div class="hero-format-sidebar">
-                <div class="hero-format-card">
+                <div class="hero-header-image reveal reveal-scale delay-200">
+                    <img src="img/header.png" alt="Дела амурные" class="hero-img">
+                </div>
+                <div class="hero-format-card reveal reveal-scale delay-400">
                     <h3>О событии</h3>
                     <ul class="format-list">
                         <li class="format-item">
@@ -141,7 +145,7 @@
     <!-- Секция: Жесткий диск (Вводный блок с болями) -->
     <section id="about" class="disk-section">
         <div class="container disk-grid">
-            <div class="disk-content">
+            <div class="disk-content reveal reveal-left">
                 <h2>Что записано на вашем <span>любовном жестком диске?</span></h2>
                 <div class="disk-text">
                     <p>У каждого из нас есть свой любовный архив. Там лежат старые файлы: как надо любить, сколько можно терпеть, кому верить, кого выбирать, как просить, можно ли злиться, стыдно ли говорить о деньгах, опасно ли хотеть большего.</p>
@@ -151,11 +155,11 @@
                 </div>
             </div>
             <div class="disk-quotes">
-                <div class="disk-quote">
+                <div class="disk-quote reveal reveal-right">
                     <div class="disk-quote-text">«Дела амурные» — это камерные встречи, где можно безопасно открыть этот архив и посмотреть, какие старые файлы до сих пор управляют нашей жизнью.</div>
                     <span class="disk-quote-tag">Пространство безопасности</span>
                 </div>
-                <div class="disk-quote">
+                <div class="disk-quote reveal reveal-right delay-200">
                     <div class="disk-quote-text">Здесь можно задавать неловкие вопросы, смеяться над ситуациями, слушать чужие разборы и вдруг понимать: «Так вот где у меня всё завязано».</div>
                     <span class="disk-quote-tag">Психологическая глубина</span>
                 </div>
@@ -166,9 +170,9 @@
     <!-- Элемент 6: Видео/Изображения (Блок "Как проходит встреча" с таймингом и атмосферой) -->
     <section id="format" class="how-it-works">
         <div class="container">
-            <h2>Как проходит <span>встреча</span></h2>
+            <h2 class="reveal reveal-up">Как проходит <span>встреча</span></h2>
             <div class="how-grid">
-                <div class="how-descr-card">
+                <div class="how-descr-card reveal reveal-left">
                     <p>Каждая встреча начинается с одной большой темы. Мы называем её папкой на любовном жёстком диске.</p>
                     <p>Сначала Яна коротко открывает тему и показывает, какие сценарии чаще всего в ней включаются. Потом — вопросы участников: заранее присланные, анонимные записки, вопросы из зала. В финале Яна подводит итоги и собирает обратную связь, инсайты участников.</p>
                     <div class="how-descr-quote">
@@ -177,22 +181,22 @@
                 </div>
 
                 <div class="how-timeline">
-                    <div class="timeline-step">
+                    <div class="timeline-step reveal reveal-right">
                         <div class="timeline-time">10–15 минут</div>
                         <div class="timeline-title">Вход в тему вечера</div>
                         <div class="timeline-text">Яна коротко очерчивает границы проблемы, открывает «папку» и подсвечивает типичные скрытые механизмы и сценарии.</div>
                     </div>
-                    <div class="timeline-step">
+                    <div class="timeline-step reveal reveal-right delay-100">
                         <div class="timeline-time">50–60 минут</div>
                         <div class="timeline-title">Ответы на вопросы, разборы, анонимные записки</div>
                         <div class="timeline-text">Центральная, живая часть вечера. Ответы на ваши анонимные и устные вопросы. Психологический разбор ситуаций.</div>
                     </div>
-                    <div class="timeline-step">
+                    <div class="timeline-step reveal reveal-right delay-200">
                         <div class="timeline-time">25–30 минут</div>
                         <div class="timeline-title">Общий авторский разбор и выводы</div>
                         <div class="timeline-text">Сбор инсайтов участников. Яна раскладывает тему по полочкам и дает практические психологические ориентиры.</div>
                     </div>
-                    <div class="timeline-step">
+                    <div class="timeline-step reveal reveal-right delay-300">
                         <div class="timeline-time">+ 30 минут</div>
                         <div class="timeline-title">Свободное общение и личные вопросы</div>
                         <div class="timeline-text">Неформальная камерная часть после официального завершения. Возможность подойти к Яне лично в безопасной атмосфере.</div>
@@ -205,13 +209,13 @@
     <!-- Элемент 7: Core Benefits/Features (Какие папки будем открывать - Аккордеон) -->
     <section id="folders" class="folders-section">
         <div class="container">
-            <h2>Какие папки <span>будем открывать</span></h2>
-            <div class="folders-descr">
+            <h2 class="reveal reveal-up">Какие папки <span>будем открывать</span></h2>
+            <div class="folders-descr reveal reveal-up delay-100">
                 У каждого из нас есть свой любовный жёсткий диск. Там лежит много старых файлов. На встречах «Дела амурные» мы будем открывать эти папки по очереди, чтобы получился живой разговор о том, какие мы настоящие, а не скучная лекция о том, как «правильно» жить.
             </div>
 
             <!-- Аккордеоны по рекомендации интерфейса в ТЗ -->
-            <div class="accordion-container">
+            <div class="accordion-container reveal reveal-up delay-200">
                 
                 <!-- Папка 1 -->
                 <div class="folder-accordion">
@@ -403,7 +407,7 @@
     <!-- Элемент 8: Тест-опросы или Блок вопросов "Можно задать вопрос" -->
     <section id="questions" class="questions-section">
         <div class="container questions-grid">
-            <div class="questions-intro">
+            <div class="questions-intro reveal reveal-left">
                 <h2>Если вопрос для вас неловкий — скорее всего, <span>он очень важный</span></h2>
                 <div class="questions-intro-text">
                     <p>На каждой встрече есть главная тема вечера, но вопрос можно прислать заранее из любой папки: про деньги, секс, ссоры, бывших, сайты знакомств, измену, родителей, развод или вечную надежду, что человек однажды изменится.</p>
@@ -421,7 +425,7 @@
             </div>
 
             <!-- Элемент 11 (частично): Форма анонимного вопроса -->
-            <div class="form-box">
+            <div class="form-box reveal reveal-right">
                 <form id="questionForm">
                     <div class="form-element-container">
                         <h3 class="form-title">Задать анонимный вопрос</h3>
@@ -466,8 +470,8 @@
     <!-- Элемент 9: Ближайшая встреча (Легко редактируемый блок) -->
     <section id="next" class="next-meeting">
         <div class="container">
-            <h2>Ближайшая <span>встреча</span></h2>
-            <div class="meeting-card">
+            <h2 class="reveal reveal-up">Ближайшая <span>встреча</span></h2>
+            <div class="meeting-card reveal reveal-scale delay-100">
                 <div class="meeting-card-grid">
                     <div class="meeting-info">
                         <span class="meeting-badge">Анонс</span>
@@ -513,11 +517,11 @@
     <!-- Тарифы / Стоимость участия -->
     <section class="price-section">
         <div class="container">
-            <h2>Стоимость <span>участия</span></h2>
+            <h2 class="reveal reveal-up">Стоимость <span>участия</span></h2>
             <div class="price-grid">
                 
                 <!-- Тариф 1 -->
-                <div class="price-card">
+                <div class="price-card reveal reveal-up">
                     <h3 class="price-card-title">1 билет</h3>
                     <div class="price-card-val">2 000 ₽</div>
                     <p class="price-card-descr">Для тех, кто хочет прийти самостоятельно, спокойно послушать, поразмышлять и задать свой вопрос.</p>
@@ -525,7 +529,7 @@
                 </div>
 
                 <!-- Тариф 2 -->
-                <div class="price-card featured">
+                <div class="price-card featured reveal reveal-up delay-100">
                     <h3 class="price-card-title">2 билета</h3>
                     <div class="price-card-val">3 000 ₽</div>
                     <p class="price-card-descr">Можно прийти с подругой, другом, мамой, мужем, женой или вашим партнёром. Вдвоем идти спокойнее и интереснее.</p>
@@ -533,7 +537,7 @@
                 </div>
 
                 <!-- Тариф 3 -->
-                <div class="price-card">
+                <div class="price-card reveal reveal-up delay-200">
                     <h3 class="price-card-title">Абонемент на 4 встречи</h3>
                     <div class="price-card-val">4 000 ₽</div>
                     <p class="price-card-descr">Стартовое предложение для участников первой встречи. Подходит тем, кто хочет постепенно разбирать свои повторяющиеся сценарии и быть частью проекта.</p>
@@ -547,7 +551,7 @@
     <!-- Элемент 11 (спикер): Почему Яна (Информация об авторе) -->
     <section id="why-yana" class="about-author">
         <div class="container author-grid">
-            <div class="author-image-wrapper">
+            <div class="author-image-wrapper reveal reveal-left">
                 <!-- Стилизованное вечернее театральное изображение-заглушка с золотым свечением -->
                 <div class="author-placeholder-visual">
                     <div class="author-placeholder-icon">🎙️</div>
@@ -556,7 +560,7 @@
                 </div>
             </div>
             
-            <div class="author-info">
+            <div class="author-info reveal reveal-right">
                 <h2>Я не учу правильно любить.<br>Я помогаю увидеть, <span>что вы называете любовью</span></h2>
                 <div class="author-quote">
                     «Я много лет работаю с темой отношений: в консультациях, тренингах, радиоэфирах, психологических стендапах и живых разборах. И чем дольше я в этой теме, тем яснее вижу: людям не хватает не информации. Информации как раз слишком много. Не хватает места, где можно спокойно разложить свою историю без стыда, без спешки и без очередного банального совета».
@@ -583,20 +587,20 @@
     <!-- Элемент 8 (Тестимониалы/Отзывы) - Необходимый элемент 11-элементной структуры -->
     <section class="disk-section">
         <div class="container">
-            <h2>Что говорят <span>участники встреч</span></h2>
+            <h2 class="reveal reveal-up">Что говорят <span>участники встреч</span></h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px;">
                 
-                <div class="disk-quote" style="background-color: var(--color-graphite-light);">
+                <div class="disk-quote reveal reveal-up" style="background-color: var(--color-graphite-light);">
                     <div class="disk-quote-text">«Шла на встречу с жутким скепсисом. Думала, опять будут говорить про "женскую энергию" или "границы". Но Яна перевернула всё с ног на голову. Сидела с открытым ртом, когда разбирали "папку" про ссоры. Увидела себя и мужа как на ладони. Будто во мне удалили старый вирус.»</div>
                     <span class="disk-quote-tag" style="display: block; margin-top: 15px; color: var(--color-cream); font-weight: normal; font-size: 0.9rem;">— Екатерина, 34 года</span>
                 </div>
 
-                <div class="disk-quote" style="background-color: var(--color-graphite-light);">
+                <div class="disk-quote reveal reveal-up delay-100" style="background-color: var(--color-graphite-light);">
                     <div class="disk-quote-text">«Абсолютно невероятный формат. Камерно, темно, безумно стильно и очень тепло. Можно просто молчать и слушать. Но когда люди начали задавать вопросы из анонимных записок — я понял, что все наши проблемы под копирку одинаковые. Спасибо Яне за эту честность и юмор.»</div>
                     <span class="disk-quote-tag" style="display: block; margin-top: 15px; color: var(--color-cream); font-weight: normal; font-size: 0.9rem;">— Михаил, 29 лет</span>
                 </div>
 
-                <div class="disk-quote" style="background-color: var(--color-graphite-light);">
+                <div class="disk-quote reveal reveal-up delay-200" style="background-color: var(--color-graphite-light);">
                     <div class="disk-quote-text">«Яна удивительная. Она умеет сказать жесткую правду, но так мягко и с такой поддержкой, что хочется не плакать, а смеяться над своими прошлыми глупостями. Тема денег в паре всегда была для нас табу, а после встречи мы впервые спокойно и по-взрослому её обсудили.»</div>
                     <span class="disk-quote-tag" style="display: block; margin-top: 15px; color: var(--color-cream); font-weight: normal; font-size: 0.9rem;">— Анна, 41 год</span>
                 </div>
@@ -608,9 +612,9 @@
     <!-- FAQ секция (Элемент 9 структуры) -->
     <section class="questions-section" style="border-top: 1px solid rgba(197, 160, 89, 0.1);">
         <div class="container" style="max-width: 900px;">
-            <h2>Часто задаваемые <span>вопросы</span></h2>
+            <h2 class="reveal reveal-up">Часто задаваемые <span>вопросы</span></h2>
             
-            <div class="accordion-container" style="margin-top: 40px;">
+            <div class="accordion-container reveal reveal-up delay-100" style="margin-top: 40px;">
                 
                 <div class="folder-accordion">
                     <div class="accordion-header" style="padding: 20px 24px;">
@@ -667,7 +671,7 @@
     <!-- Форма записи на встречу -->
     <section id="booking" class="booking-section">
         <div class="container booking-grid">
-            <div class="booking-info">
+            <div class="booking-info reveal reveal-left">
                 <h2>Записаться <span>на встречу</span></h2>
                 <p class="booking-info-text">Оставьте контакты, и мы свяжемся с вами, чтобы подтвердить ваше участие, сориентировать по датам ближайших встреч и выслать точный адрес площадки.</p>
                 
@@ -687,7 +691,7 @@
                 </div>
             </div>
 
-            <div class="form-box">
+            <div class="form-box reveal reveal-right">
                 <form id="bookingForm">
                     <div class="form-element-container">
                         <h3 class="form-title">Занять место в зале</h3>
@@ -740,7 +744,7 @@
 
     <!-- Элемент 10: Final CTA (Второй шанс) -->
     <section class="final-cta">
-        <div class="container final-cta-container">
+        <div class="container final-cta-container reveal reveal-scale">
             <h2>Если вы устали снова попадать в один и тот же любовный сериал — <span>приходите</span></h2>
             <div class="final-cta-text">
                 <p>Иногда первый шаг к близости начинается не с нового свидания, не с очередного разговора с бывшим и не с расклада на чувства.</p>

@@ -176,4 +176,30 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // 6. Анимация появления элементов при прокрутке (Intersection Observer)
+    const revealElements = document.querySelectorAll('.reveal');
+
+    if ('IntersectionObserver' in window) {
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -60px 0px'
+        });
+
+        revealElements.forEach(el => {
+            revealObserver.observe(el);
+        });
+    } else {
+        // Фоллбек для старых браузеров
+        revealElements.forEach(el => {
+            el.classList.add('active');
+        });
+    }
 });

@@ -429,6 +429,42 @@ h3 {
     }
 }
 
+.hero-format-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .hero-format-sidebar {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+.hero-header-image {
+    width: 100%;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid rgba(197, 160, 89, 0.2);
+    box-shadow: var(--shadow-soft), var(--shadow-gold);
+    transition: var(--transition);
+}
+
+.hero-header-image:hover {
+    border-color: var(--color-gold);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(197, 160, 89, 0.25);
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
 /* Формат на первом экране */
 .hero-format-card {
     background-color: var(--color-graphite-light);
@@ -1682,3 +1718,52 @@ h3 {
 
 /* Иконки FontAwesome (используем SVG/Unicode или SVG в коде, но сделаем легкие FontAwesome иконки через CDN) */
 /* Мы подключим FontAwesome CDN в HTML */
+
+/* ==========================================================================
+   Красивые анимации появления (Entrance Scroll Animations)
+   ========================================================================== */
+
+/* Начальное состояние элементов только при включенном JS, чтобы избежать пустых экранов при отключенном JS */
+.js-enabled .reveal {
+    opacity: 0;
+    transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.js-enabled .reveal-up {
+    transform: translateY(40px);
+}
+
+.js-enabled .reveal-down {
+    transform: translateY(-40px);
+}
+
+.js-enabled .reveal-left {
+    transform: translateX(-40px);
+}
+
+.js-enabled .reveal-right {
+    transform: translateX(40px);
+}
+
+.js-enabled .reveal-scale {
+    transform: scale(0.95);
+}
+
+/* Конечное состояние при добавлении класса active */
+.js-enabled .reveal.active {
+    opacity: 1;
+    transform: translate(0) scale(1);
+}
+
+/* Задержки (Staggered animation delays) */
+.js-enabled .delay-100 { transition-delay: 100ms; }
+.js-enabled .delay-200 { transition-delay: 200ms; }
+.js-enabled .delay-300 { transition-delay: 300ms; }
+.js-enabled .delay-400 { transition-delay: 400ms; }
+.js-enabled .delay-500 { transition-delay: 500ms; }
+.js-enabled .delay-600 { transition-delay: 600ms; }
+.js-enabled .delay-700 { transition-delay: 700ms; }
+.js-enabled .delay-800 { transition-delay: 800ms; }
+
