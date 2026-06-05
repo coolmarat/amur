@@ -185,6 +185,7 @@ h3 {
 .logo {
     display: flex;
     flex-direction: column;
+    text-decoration: none;
 }
 
 .logo-title {
